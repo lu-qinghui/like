@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>霓虹爱心</title>
+	<meta name="language" content="zh-CN">
+	<link rel="stylesheet" href="006/css/style.css">
+
+	<style>
+
+		button {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			padding: 8px 16px; /* 调整按钮内边距 */
+			font-size: 14px; /* 调整字体大小 */
+			background-color: #ff6f61;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="canvas" width="1400" height="600"></canvas>
+
+</body>
+<script src="006/js/script.js"></script>
+
+<!-- 添加一个按钮，点击后跳转到下一个页面 -->
+<button onclick="redirectToNextPage()">下一页</button>
+
+
+<script>
+	// JavaScript函数，用于页面跳转
+	function redirectToNextPage() {
+		// 使用window.location.href实现页面跳转，你可以替换为你需要跳转的页面URL
+		window.location.href = '/yaobailovexin';
+	}
+</script>
+
+<audio autoplay loop>
+	<source src="music/dingge.mp3" type="audio/mpeg">
+</audio>
+
+</html>

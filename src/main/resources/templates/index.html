@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱情之旅</title>
+    <style>
+        /* 页面基础动画和样式 */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            background: url('http://localhost/girl.png') no-repeat center center fixed; /* 使用您的图片URL */
+            background-size: cover;
+            color: #ffffff;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* 欢迎信息和按钮的样式 */
+        .welcome-message {
+            font-size: 36px;
+            color: #ff4081;
+            text-shadow: 2px 2px 4px #000000;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4; /* 按钮颜色 */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff85c1;
+            transform: scale(1.1);
+        }
+
+        /* 容器和文本样式 */
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px;
+            transition: transform 0.5s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1, p, .love-quote, .footer {
+            animation: fadeIn 3s;
+        }
+
+        .love-quote {
+            font-style: italic;
+            color: #ff80ab;
+            margin-top: 30px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 页面内容 -->
+<div class="welcome-message animated">欢迎来到爱情之旅</div>
+<button onclick="redirectToNextPage()">开始探索</button>
+
+<div class="container animated">
+    <h1>爱情的故事</h1>
+    <p>在这个页面上，我们探索和庆祝爱情的深度和多样性。</p>
+    <div class="love-quote">
+        “爱情是生命的火焰，它照亮我们的道路，温暖我们的心灵。”
+    </div>
+    <div class="footer">
+        &copy; 2023 爱情故事. All Rights Reserved.
+    </div>
+</div>
+
+<script>
+    // JavaScript函数，用于页面跳转
+    function redirectToNextPage() {
+        window.location.href = '/love';
+    }
+</script>
+
+</body>
+</html>

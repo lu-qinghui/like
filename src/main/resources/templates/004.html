@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小魏同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="小魏同学">
+    <link rel="stylesheet" href="004/css/love.css">
+
+    <style>
+        button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 8px 16px; /* 调整按钮内边距 */
+            font-size: 14px; /* 调整字体大小 */
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
+        <source src="004/MP3/1.mp3" />
+    </audio>
+
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+        <div class="body_left">
+            <img src="004/images/biubiubiu.gif" alt="" ondragstart='return false;'>
+        </div>
+
+        <div class="body_center love">
+            <div class="block">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="border">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="004/js/love.js"></script>
+
+    <!-- 添加一个按钮，点击后跳转到下一个页面 -->
+    <button onclick="redirectToNextPage()">下一页</button>
+
+
+    <script>
+        // JavaScript函数，用于页面跳转
+        function redirectToNextPage() {
+            // 使用window.location.href实现页面跳转，你可以替换为你需要跳转的页面URL
+            // 首页面
+            window.location.href = '/yanhua';
+        }
+    </script>
+</body>
+
+</html>
